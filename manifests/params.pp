@@ -25,6 +25,10 @@ class apt::params {
         }
       }
     }
+    'raspbian': {
+        $distid = 'debian'
+        $distcodename = 'wheezy'
+    }
     '': {
       fail('Unable to determine lsbdistid, is lsb-release installed?')
     }
